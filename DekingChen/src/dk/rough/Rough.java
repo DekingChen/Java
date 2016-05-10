@@ -50,7 +50,7 @@ public class Rough extends Show{
 		U.add(e1);U.add(e2);U.add(e3);U.add(e4);U.add(e5);
 		U.add(e6);U.add(e7);U.add(e8);U.add(e9);U.add(e10);
 		U.add(e11);U.add(e12);U.add(e13);U.add(e14);
-		boolean B[] =  {false,true,true,true,false};
+		//boolean B[] =  {false,true,true,true,false};
 		//boolean B1[] = {false,false,false,false,true};
 		//show(getB(B)[B.length-1]);
 		//Collections.sort(U);//Ω¯––∂‡Œ¨≈≈–Ú
@@ -58,7 +58,7 @@ public class Rough extends Show{
 		/*for(Entity list:U){
 			show(list.toString());
 		}*/
-		List<ArrayList<Entity>> U_B = getU_B(U,B);
+		//List<ArrayList<Entity>> U_B = getU_B(U,B);
 	   /*for(ArrayList<Entity> list:U_B){
 		   for(Entity e:list){
 			   show(e.toString());

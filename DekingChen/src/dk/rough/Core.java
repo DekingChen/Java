@@ -1,10 +1,8 @@
 
 package dk.rough;
 
-import java.util.List;
 
 import dk.main.Show;
-import dk.rough.Rough;
 
 /**
  * @author Administrator
