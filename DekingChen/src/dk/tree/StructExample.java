@@ -5,8 +5,11 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 import java.util.Vector;
-
 import dk.main.Show;
+/**
+ * @author Administrator
+ * java中常见的数据结构的使用
+ */
 public class StructExample extends Show {
 
 	public static void main(String[] args) {
