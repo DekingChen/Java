@@ -55,6 +55,7 @@ public class GreetingServer extends Thread
       int port = Integer.parseInt(args[0]);
       try
       {
+         System.out.println("The Server is starting.....");
          Thread t = new GreetingServer(port);
          t.start();
       }catch(IOException e)
