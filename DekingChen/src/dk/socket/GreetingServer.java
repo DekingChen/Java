@@ -7,7 +7,7 @@ package dk.socket;
 import java.net.*;
 import java.io.*;
 /**
- * @author Administrator
+ * @author DekingChen
  *
  */
 public class GreetingServer extends Thread
