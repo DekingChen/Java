@@ -5,9 +5,9 @@ import java.util.TreeSet;
 
 import dk.main.Show;
 
-public class Tree extends Show{
+public class Treeset extends Show{
 
-	public static void mian(String [] args){
+	public static void mian(String[] args){
 		TreeSet<Student> ts  = new TreeSet<Student>();
 		ts.add(new Student("lisi0",30));
         ts.add(new Student("lisixx",29));
