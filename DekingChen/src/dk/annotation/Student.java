@@ -15,8 +15,8 @@ public class Student extends Person{
 		super(name, age);
 		// TODO Auto-generated constructor stub
 	}
-	
-	public void sing(String name){
+
+	public void sing(String name) {
 		show();
 	}
 	@Description(author = "Deking", desc = "Java Annotation" ,age=24)

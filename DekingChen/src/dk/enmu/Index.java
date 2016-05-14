@@ -9,16 +9,18 @@ import dk.main.Show;
  * @author Administrator
  *
  */
-public class Index extends Show{
+public class Index extends Show {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-	 show(State.Update.getName());
-	 show(State.Update.getIndex());	
-	 State.Update.showMsg();
-	 show(ColorEnum.blue);
+		show(State.Update.getName());
+		show(State.Update.getIndex());
+		State.Update.showMsg();
+		show(ColorEnum.blue);
+		show(State.getName(3));
+
 	}
 
 }

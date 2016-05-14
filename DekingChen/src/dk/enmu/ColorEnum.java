@@ -1,5 +1,5 @@
 package dk.enmu;
 
 public enum ColorEnum {
-    white, red, green, blue;
+	white, red, green, blue;
 }
