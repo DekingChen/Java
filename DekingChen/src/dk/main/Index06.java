@@ -35,7 +35,7 @@ public class Index06 extends Show {
 		show(ee.toString());
 		show("fuckyourmother----------");
 		int len = B.length;
-		int u_len = U.size();
+		//int u_len = U.size();
 		/*for(int j=0;j<u_len;j++){
 			Entity e = U.get(j);
 			//int[] list = e.getList();
@@ -60,7 +60,7 @@ public class Index06 extends Show {
 		for(Entity e3e:U){
 			sort_list =  e3e.getList();
 			e3e.setSort(sort_list);
-			int[] l = e3e.getList();
+			//int[] l = e3e.getList();
  			for(int i=0;i<len;i++){
 				if(!B[i])
 					sort_list[i] = 0;
