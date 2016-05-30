@@ -3,12 +3,12 @@
  */
 package dk.design;
 
-import dk.design.design.Boy;
-import dk.design.design.Girl;
-import dk.design.design.HairFactory;
-import dk.design.design.HairInterface;
-import dk.design.design.MCFactory;
-import dk.design.design.PersonFactory;
+import dk.design.factory.Boy;
+import dk.design.factory.Girl;
+import dk.design.factory.HairFactory;
+import dk.design.factory.HairInterface;
+import dk.design.factory.MCFactory;
+import dk.design.factory.PersonFactory;
 import dk.design.singleton.Singleton01;
 import dk.main.Show;
 

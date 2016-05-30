@@ -1,4 +1,4 @@
-package dk.design.design;
+package dk.design.factory;
 
 import java.io.IOException;
 import java.io.InputStream;

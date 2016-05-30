@@ -1,17 +1,17 @@
-package dk.design.design;
+package dk.design.factory;
 
-public class MCFactory implements PersonFactory{
+public class NYFactory implements PersonFactory{
 
 	@Override
 	public Boy getBoy() {
 		// TODO Auto-generated method stub
-		return new MCBoy();
+		return new NYBoy();
 	}
 
 	@Override
 	public Girl getGirl() {
 		// TODO Auto-generated method stub
-		return new MCGirl();
+		return new NYGirl();
 	}
 
 }
