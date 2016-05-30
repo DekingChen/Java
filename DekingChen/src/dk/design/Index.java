@@ -45,6 +45,7 @@ public class Index extends Show{
 		boy.drowBoy();
 		Girl girl = factory.getGirl();
 		girl.drawGirl();
+
 	}
 	
 	public static void testChain(){
