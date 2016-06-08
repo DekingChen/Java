@@ -1,6 +1,6 @@
 package dk.design.adapter;
 
-public class TwoPlugAdapter implements ThreePluIf {
+public class TwoPlugAdapter implements ThreePluIf {	
 
 	private GBTwoPlug plug;
 	
