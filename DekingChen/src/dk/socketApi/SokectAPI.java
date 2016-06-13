@@ -24,10 +24,10 @@ public class SokectAPI {
 	 */
 	public static void main(String[] args) throws Exception {
 		
-		/*Server server = new Server();
+		Server server = new Server();
 		server.Connect(8888);
 		Client client = new Client();
-		client.Connet("localhost", 8888);*/
+		client.Connet("localhost", 8888);
 		TestInetAdress();
 		
 	}
