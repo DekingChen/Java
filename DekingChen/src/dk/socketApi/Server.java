@@ -27,6 +27,7 @@ public class Server {
 			while(true){
 				socket = server.accept();
 				ServerThread serverthread = new ServerThread(socket);
+				serverthread.setPriority(4);//设置优先级，否则运行比较慢
 				serverthread.start();
 				System.out.println("Count is " + count);
 				count++;

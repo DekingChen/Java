@@ -22,12 +22,6 @@ public class ServerThread extends Thread {
 	public ServerThread(Socket socket){
 		this.socket = socket;
 	}
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-
-	}
 	
 	public void run(){
 		
