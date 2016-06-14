@@ -22,9 +22,9 @@ public class InputStreamDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String path = "F:\\Java\\Data\\data.txt";
+		/*String path = "F:\\Java\\Data\\data.txt";
 		String path01 = "F:\\Java\\Data\\king.txt";
-		String path02 = "F:\\Java\\Data\\count_test.txt";
+		String path02 = "F:\\Java\\Data\\count_test.txt";*/
 		String path03 = "F:\\Java\\Data\\student.txt";
 		//countFile(path);
 		//copyFile(path02,path01);
