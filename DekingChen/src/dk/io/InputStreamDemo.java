@@ -3,11 +3,14 @@
  */
 package dk.io;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
@@ -22,28 +25,49 @@ public class InputStreamDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		/*String path = "F:\\Java\\Data\\data.txt";
+		//String path = "F:\\Java\\Data\\data.txt";
 		String path01 = "F:\\Java\\Data\\king.txt";
-		String path02 = "F:\\Java\\Data\\count_test.txt";*/
-		String path03 = "F:\\Java\\Data\\student.txt";
-		//countFile(path);
+		//String path02 = "F:\\Java\\Data\\count_test.txt";
+		//String path03 = "F:\\Java\\Data\\student.txt";
+		countFile(path01);
 		//copyFile(path02,path01);
-		readObj(path03);
+		//readObj(path02);
 	}
 	
 	public static void countFile(String path){
 		int count = 0;
 		FileInputStream reader = null;
+		BufferedInputStream buffer = null;
+		InputStreamReader char_reader = null;
+		BufferedReader char_reader_buffer = null;
 		try {
 			reader = new FileInputStream(new File(path));
+			buffer = new BufferedInputStream(reader);
+			char_reader = new InputStreamReader(reader);
+			char_reader_buffer = new BufferedReader(char_reader);
 			try {
 				while(reader.read()!= -1){
 					count++;
 				}
+				
+				byte[] b = new byte[2];
+				while((buffer.read(b))!= -1){
+					System.out.println(new String(b));
+				}
+				char[] c = new char[1];
+				
+				while(( char_reader.read(c))!=-1){
+					System.out.println(new String(c));
+				}
+				String s = null;
+				while((s = char_reader_buffer.readLine())!=null){
+					System.out.println(s);
+				}
+ 				
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			System.out.println("---长度是： "+count+" 字节"); 
+			System.out.println("字节长度是： "+count+" 字节"); 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}finally{
