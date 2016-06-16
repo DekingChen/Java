@@ -53,8 +53,8 @@ public class ExcuteTask {
 	
 	public Date getTime(){
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.HOUR_OF_DAY, 11);
-		calendar.set(Calendar.MINUTE, 39);
+		calendar.set(Calendar.HOUR_OF_DAY, 21);
+		calendar.set(Calendar.MINUTE, 30);
 		calendar.set(Calendar.SECOND, 00);
 		Date time = calendar.getTime();
 		return time;
@@ -138,6 +138,15 @@ public class ExcuteTask {
 			   }
 		   }
 	   }, 0,1000);
+   }
+   
+   public void TaskSeven(){
+	   time_task.schedule(new TimerTask(){
+		   public void run(){
+			   System.out.println("Doing some task!!!");
+			   this.cancel();
+		   }
+	   }, 1000,1000);
    }
 
 }
