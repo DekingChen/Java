@@ -31,7 +31,7 @@ public class JExcel extends Show{
 		
 	}
 	//¶ÁÈ¡ExcelÎÄ¼þ(97-2003)
-	public static void readExcel(){
+	public static void readExcel() throws IOException{
 		try {
 			Workbook workbook = Workbook.getWorkbook(new File(file_path));
 			Sheet sheet = workbook.getSheet(0);
@@ -43,7 +43,7 @@ public class JExcel extends Show{
 				show("\t\n");
 			}
 			workbook.close();
-		} catch (BiffException | IOException e) {
+		} catch (BiffException e) {
 			e.printStackTrace();
 		}
 			

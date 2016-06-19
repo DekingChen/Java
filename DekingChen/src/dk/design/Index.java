@@ -20,8 +20,10 @@ public class Index extends Show{
 
 	/**
 	 * @param args
+	 * @throws ClassNotFoundException 
+	 * @throws IllegalAccessException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IllegalAccessException, ClassNotFoundException {
 		testSingle();
 		testFactory();
 	}
@@ -37,7 +39,7 @@ public class Index extends Show{
 		}
 	}
 	
-	public static void testFactory(){
+	public static void testFactory() throws IllegalAccessException, ClassNotFoundException{
 		HairInterface left = HairFactory.getHairByClassKey("left");
 		left.draw();
 		PersonFactory factory = new MCFactory();
